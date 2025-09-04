@@ -1,4 +1,22 @@
 {
+  "name": "fullwebservicewithdb",
+  "version": "1.0.0",
+  "description": "Assignment 3.21",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephsumatuk-blip/fullwebservicewithdb.git"
+  },
+  "author": "Joseph Sum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephsumatuk-blip/fullwebservicewithdb/issues"
+  },
+  "homepage": "https://github.com/josephsumatuk-blip/fullwebservicewithdb#readme",
   "dependencies": {
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
