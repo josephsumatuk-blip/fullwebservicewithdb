@@ -1,11 +1,9 @@
 
 
-if (process.argv.length !== 3 && process.argv.length !== 5) {
+if (process.argv.length !== 4) {
   console.log('Usage:\n\n',
     '[For adding new contact info]\n',
-    '   > node mongo.js <db_password> <contact name> <contact number>\n\n',
-    '[For retrieving contact info]\n',
-    '   > node mongo.js <db_password>\n'    
+    '   > node mongo.js <contact name> <contact number>\n\n',
   )
   process.exit(1)
 }
