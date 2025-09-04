@@ -1,10 +1,10 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
 
 mongoose.set('strictQuery', false)
 
-const password = process.argv[2]
-const url = process.argv.MONGODB_URI
-
+const url = process.env.MONGODB_URI
+console.log(url)
 mongoose.connect(url)
   .then(result => {
     console.log('connected to MongoDB')
