@@ -3,8 +3,7 @@ const mongoose = require('mongoose')
 mongoose.set('strictQuery', false)
 
 const password = process.argv[2]
-const dbname = 'phonebook'
-const url = `mongodb+srv://josephsumatuk_db_user:${password}@cluster0.c4itgfp.mongodb.net/${dbname}?retryWrites=true&w=majority&appName=Cluster0`
+const url = process.argv.MONGODB_URI
 
 mongoose.connect(url)
   .then(result => {
